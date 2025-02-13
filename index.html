@@ -15,7 +15,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <nav class="flex justify-between items-center p-4  bg-yellow-50">
+    <nav class="flex justify-between items-center p-4 bg-orange-50">
         <div class="flex items-center space-x-2">
             <img src="c1-assets/logo-header.png" alt="Pet Logo" class="w-24 h-12 object-contain">
             <h1 class="text-2xl font-semibold hidden md:block">Browse <span class="text-yellow-500">Pets</span></h1>
@@ -38,36 +38,35 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-            <!-- Background Image -->
-            <section class="relative w-full h-screen px-8 lg:px-16 flex flex-col lg:flex-row items-center ">
+    <!-- 2nd Section -->
+            
+            <section class=" md:flex  px-10 mx-10 md:items-center md:justify-around h-auto ">
               
                 <!-- Text Content (Foreground) -->
-                <div class="relative max-w-2xl z-10 text-center lg:text-left">
-                  <h1 class="text-5xl font-bold text-gray-900 leading-tight">
+                <div>
+                  <h2 class="animate-bounce text-4xl  font-bold text-gray-900 leading-tight">
                     Pamper Your Pet, <br /> Because They Deserve the Best
-                  </h1>
-                  <p class="mt-4 text-lg text-gray-700">
-                    Discover a world of treats, toys, and essentials handpicked for your
+                  </h2>
+                  <p class=" mt-4  text-gray-700">
+                    Discover a world of treats, toys, and essentials handpicked for <br/> your
                     furry friends. Shop now and make tails wag with joy!
                   </p>
-                  <button class="mt-6 px-6 py-3 bg-yellow-400 text-gray-900 font-semibold rounded-lg shadow-md hover:bg-yellow-500 transition">
+                  <button class="motion-safe:animate-bounce mt-6 px-6 py-3 bg-yellow-400 text-gray-900 font-semibold rounded-lg shadow-md hover:bg-green-500">
                     Find a pet
                   </button>              
             </div>
-            <div mt-6 lg:mt-0 lg:w-1/2 flex justify-center >
+            <div>
                 <img
                   src="c1-assets/cat-big.png"
                   alt="Cute Cat"
-                  class="w-full max-w-md lg:max-w-lg h-auto"
                 />
               </div>
           </section>
         
 <!-- 3rd part -->
-<div class="bg-white p-6 rounded-lg shadow-md">
+<div class="bg-white  px-10 mx-10 mt-10 mb-10 ">
     <h2 class="text-2xl font-bold mb-4">Browse By Categories</h2>
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+    <div class="md:h-48 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
   
       <div class="bg-yellow-100 rounded-lg p-4 flex flex-col items-center">
         <div class="rounded-full bg-yellow-300 w-12 h-12 mb-2 flex items-center justify-center">
@@ -113,9 +112,10 @@
   
     </div>
   </div>
+
 <!-- 4th part -->
 
-<section class="bg-orange-50 p-8">
+<section class="bg-orange-50 p-20">
 
     <h2 class="text-2xl font-bold text-gray-800 mb-6">Trending Pet Products</h2>
 
@@ -127,65 +127,118 @@
                 Discover a world of treats, toys, and essentials handpicked for your pet.
             </p>
             <img src="c1-assets/cute-pet-mid.png" alt="Dog T-Shirt" class="mt-8 w-44 object-cover rounded-lg">
-            <button class="mt-4 px-4 py-2 bg-gray-900 text-white rounded-lg hover:bg-gray-700">Shop Now</button>
+            <button class="mt-4 px-4 py-2 bg-blue-300 text-white rounded-lg hover:bg-green-400">Shop Now</button>
         </div>
 
         <!-- Product Grid -->
         <div class="md:col-span-2 grid grid-cols-2 md:grid-cols-3 gap-4">
             <!-- Product Cards -->
-            <div class="bg-white p-4 rounded-lg shadow-md text-center">
-                <img src="c1-assets/bird-cartoon.png" alt="Pet Product" class="w-24 h-24 mx-auto">
-                <h4 class="mt-2 font-semibold text-gray-800">Pet Bed</h4>
-                <p class="text-gray-500 text-sm">$29.99</p>
-                <p class="text-yellow-500 mt-1">⭐ 4.5</p>
+            <div class="flex bg-white p-4 rounded-xl shadow-md items-center space-x-4">
+                <div class="w-16 h-16 flex items-center justify-center rounded-lg bg-blue-100">
+                    <img src="c1-assets/dog-cartoon.png" alt="Pet Bed">
+                </div>
+                <div>
+                    <div class="flex items-center space-x-1 text-yellow-500 text-lg">
+                        ⭐ <span class="text-gray-700 text-sm">4.5</span>
+                    </div>
+                    <h2 class="text-gray-900 font-semibold">Pet Bed</h2>
+                    <p class="text-gray-500">$39.99</p>
+                </div>
             </div>
-            <div class="bg-white p-4 rounded-lg shadow-md text-center">
-                <img src="c1-assets/pet-couch.png" alt="Pet Product" class="w-24 h-24 mx-auto">
-                <h4 class="mt-2 font-semibold text-gray-800">Pet Bowl</h4>
-                <p class="text-gray-500 text-sm">$19.99</p>
-                <p class="text-yellow-500 mt-1">⭐ 4.7</p>
+            <div class="flex bg-white p-4 rounded-xl shadow-md items-center space-x-4">
+                <div class="w-16 h-16 flex items-center justify-center rounded-lg bg-blue-100">
+                    <img src="c1-assets/bird-cartoon.png" alt="Pet Bed">
+                </div>
+                <div>
+                    <div class="flex items-center space-x-1 text-yellow-500 text-lg">
+                        ⭐ <span class="text-gray-700 text-sm">4.5</span>
+                    </div>
+                    <h2 class="text-gray-900 font-semibold">Pet Bed</h2>
+                    <p class="text-gray-500">$39.99</p>
+                </div>
             </div>
-            <div class="bg-white p-4 rounded-lg shadow-md text-center">
-                <img src="c1-assets/cat-cartoon.png" alt="Pet Product" class="w-24 h-24 mx-auto">
-                <h4 class="mt-2 font-semibold text-gray-800">Pet Toy</h4>
-                <p class="text-gray-500 text-sm">$14.99</p>
-                <p class="text-yellow-500 mt-1">⭐ 4.6</p>
+            <div class="flex bg-white p-4 rounded-xl shadow-md items-center space-x-4">
+                <div class="w-16 h-16 flex items-center justify-center rounded-lg bg-blue-100">
+                    <img src="c1-assets/rabbit-cartoon.png" alt="Pet Bed">
+                </div>
+                <div>
+                    <div class="flex items-center space-x-1 text-yellow-500 text-lg">
+                        ⭐ <span class="text-gray-700 text-sm">4.5</span>
+                    </div>
+                    <h2 class="text-gray-900 font-semibold">Pet Bed</h2>
+                    <p class="text-gray-500">$39.99</p>
+                </div>
             </div>
-            <div class="bg-white p-4 rounded-lg shadow-md text-center">
-                <img src="c1-assets/dog-cartoon.png" alt="Pet Product" class="w-24 h-24 mx-auto">
-                <h4 class="mt-2 font-semibold text-gray-800">Dog Collar</h4>
-                <p class="text-gray-500 text-sm">$9.99</p>
-                <p class="text-yellow-500 mt-1">⭐ 4.8</p>
+            <div class="flex bg-white p-4 rounded-xl shadow-md items-center space-x-4">
+                <div class="w-16 h-16 flex items-center justify-center rounded-lg bg-blue-100">
+                    <img src="c1-assets/mouse-cartoon.png" alt="Pet Bed">
+                </div>
+                <div>
+                    <div class="flex items-center space-x-1 text-yellow-500 text-lg">
+                        ⭐ <span class="text-gray-700 text-sm">4.5</span>
+                    </div>
+                    <h2 class="text-gray-900 font-semibold">Pet Bed</h2>
+                    <p class="text-gray-500">$39.99</p>
+                </div>
             </div>
-            <div class="bg-white p-4 rounded-lg shadow-md text-center">
-                <img src="c1-assets/mouse-cartoon.png" alt="Pet Product" class="w-24 h-24 mx-auto">
-                <h4 class="mt-2 font-semibold text-gray-800">Cat Scratcher</h4>
-                <p class="text-gray-500 text-sm">$34.99</p>
-                <p class="text-yellow-500 mt-1">⭐ 4.5</p>
+            <div class="flex bg-white p-4 rounded-xl shadow-md items-center space-x-4">
+                <div class="w-16 h-16 flex items-center justify-center rounded-lg bg-blue-100">
+                    <img src="c1-assets/cat-cartoon.png" alt="Pet Bed">
+                </div>
+                <div>
+                    <div class="flex items-center space-x-1 text-yellow-500 text-lg">
+                        ⭐ <span class="text-gray-700 text-sm">4.5</span>
+                    </div>
+                    <h2 class="text-gray-900 font-semibold">Pet Bed</h2>
+                    <p class="text-gray-500">$39.99</p>
+                </div>
             </div>
-            <div class="bg-white p-4 rounded-lg shadow-md text-center">
-                <img src="c1-assets/fish-cartoon.png" alt="Pet Product" class="w-24 h-24 mx-auto">
-                <h4 class="mt-2 font-semibold text-gray-800">Pet Carrier</h4>
-                <p class="text-gray-500 text-sm">$49.99</p>
-                <p class="text-yellow-500 mt-1">⭐ 4.7</p>
+            <div class="flex bg-white p-4 rounded-xl shadow-md items-center space-x-4">
+                <div class="w-16 h-16 flex items-center justify-center rounded-lg bg-blue-100">
+                    <img src="c1-assets/fish-cartoon.png" alt="Pet Bed">
+                </div>
+                <div>
+                    <div class="flex items-center space-x-1 text-yellow-500 text-lg">
+                        ⭐ <span class="text-gray-700 text-sm">4.5</span>
+                    </div>
+                    <h2 class="text-gray-900 font-semibold">Pet Bed</h2>
+                    <p class="text-gray-500">$39.99</p>
+                </div>
             </div>
-            <div class="bg-white p-4 rounded-lg shadow-md text-center">
-                <img src="c1-assets/pet-couch.png" alt="Pet Product" class="w-24 h-24 mx-auto">
-                <h4 class="mt-2 font-semibold text-gray-800">Dog Leash</h4>
-                <p class="text-gray-500 text-sm">$12.99</p>
-                <p class="text-yellow-500 mt-1">⭐ 4.6</p>
+            <div class="flex bg-white p-4 rounded-xl shadow-md items-center space-x-4">
+                <div class="w-16 h-16 flex items-center justify-center rounded-lg bg-blue-100">
+                    <img src="c1-assets/bird-cartoon.png" alt="Pet Bed">
+                </div>
+                <div>
+                    <div class="flex items-center space-x-1 text-yellow-500 text-lg">
+                        ⭐ <span class="text-gray-700 text-sm">4.5</span>
+                    </div>
+                    <h2 class="text-gray-900 font-semibold">Pet Bed</h2>
+                    <p class="text-gray-500">$39.99</p>
+                </div>
             </div>
-            <div class="bg-white p-4 rounded-lg shadow-md text-center">
-                <img src="c1-assets/rabbit-cartoon.png" alt="Pet Product" class="w-24 h-24 mx-auto">
-                <h4 class="mt-2 font-semibold text-gray-800">Pet Grooming Kit</h4>
-                <p class="text-gray-500 text-sm">$27.99</p>
-                <p class="text-yellow-500 mt-1">⭐ 4.8</p>
+            <div class="flex bg-white p-4 rounded-xl shadow-md items-center space-x-4">
+                <div class="w-16 h-16 flex items-center justify-center rounded-lg bg-blue-100">
+                    <img src="c1-assets/cat-cartoon.png" alt="Pet Bed">
+                </div>
+                <div>
+                    <div class="flex items-center space-x-1 text-yellow-500 text-lg">
+                        ⭐ <span class="text-gray-700 text-sm">4.5</span>
+                    </div>
+                    <h2 class="text-gray-900 font-semibold">Pet Bed</h2>
+                    <p class="text-gray-500">$39.99</p>
+                </div>
             </div>
-            <div class="bg-white p-4 rounded-lg shadow-md text-center">
-                <img src="c1-assets/fish-cartoon.png" alt="Pet Product" class="w-24 h-24 mx-auto">
-                <h4 class="mt-2 font-semibold text-gray-800">Pet Blanket</h4>
-                <p class="text-gray-500 text-sm">$19.99</p>
-                <p class="text-yellow-500 mt-1">⭐ 4.7</p>
+            <div class=" flex bg-white p-4 rounded-xl shadow-md items-center space-x-4 ">
+                <div class="w-16 h-16 flex items-center justify-center rounded-lg bg-blue-100">
+                    <img src="c1-assets/fish-cartoon.png" alt="Pet Bed">
+                </div>
+                <div>
+                    <div class="flex items-center space-x-1 text-yellow-500 text-lg">
+                        ⭐ <span class="text-gray-700 text-sm">4.5</span>
+                    </div>
+                    <h2 class="text-gray-900 font-semibold">Pet Bed</h2>
+                    <p class="text-gray-500">$39.99</p>
             </div>
         </div>
     </div>
@@ -193,66 +246,92 @@
 </section>
 
 <!-- 5th part -->
-<section class="bg-white min-h-screen flex justify-center items-center p-4">
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-screen-lg">  
-        <!-- Pet Grooming Mitt Card (Bigger Box) -->
-        <div class="bg-gradient-to-r from-pink-200 to-blue-200 p-10 rounded-2xl shadow-lg relative flex flex-col md:h-80 lg:h-96">
-            <p class="text-base text-gray-600">Under Price</p>
-            <h3 class="text-2xl font-bold">Pet Grooming Mitt</h3>
-            <p class="text-lg text-gray-500">(Easy Hair Removal)</p>
-            <p class="text-4xl font-bold mt-4">$7.99</p>
-            <img src="c1-assets/cute-dog-mid.png" alt="Corgi" class="absolute -bottom-4 right-6  w-40 h-40 sm:w-48 sm:h-48 object-contain"/>
+<section class="  bg-white mx-10 px-10 mb-32">
+    <h2 class="text-2xl font-bold my-6">Everyday low Price</h2>
+
+    <div class="w-full grid grid-cols-1 md:grid-cols-2  gap-6">
+        <!-- First Card -->
+        <div class=" max-w-5xl h-72 pl-12 pt-16 rounded-xl text-left  bg-gradient-to-r from-purple-100 to-blue-200  shadow-lg sm:mr-10">
+            <p class="hidden md:block text-xs text-gray-600">Under Price</p>
+            <h2 class="text-lg font-bold">Pet Grooming Mitt</h2>
+            <p class="hidden md:block text-xs text-gray-500">(Easy Hair Removal)</p>
+            <p class="text-2xl font-bold mt-2">$7.99</p>
+            <img src="c1-assets/cute-dog-mid.png" alt="Pet Grooming Mitt" class="w-32 -mt-12 ml-auto">
         </div>
 
-        <!-- T-Shirt for Dogs Card (Bigger Box) -->
-        <div class="bg-yellow-100 p-10 rounded-2xl shadow-lg relative flex flex-col md:h-80 lg:h-96">
-            <h3 class="text-2xl font-semibold">T-Shirt for Dogs</h3>
-            <p class="text-4xl font-bold text-yellow-600 mt-4">$7.99</p>  
-            <img src="c1-assets/cute-pet-mid.png" alt="Dog with T-shirt" class="absolute -bottom-4 right-6  w-40 h-40 sm:w-48 sm:h-48  object-contain"/>
+        <!-- Second Card -->
+        <div class="max-w-lg rounded-xl p-6  bg-gradient-to-r from-yellow-50 to-yellow-200 shadow-lg">
+            <p class="text-sm font-bold">T-Shirt for Dogs</p>
+            <p class="text-xl text-yellow-600 font-bold">$7.99</p>
+            <img src="c1-assets/cute-pet-mid.png" alt="T-Shirt for Dogs" class="w-32 ml-auto mt-2">
+        </div>
+    </div>
+
+</section>
+
+<!-- challenge part -->
+<section class="bg-yellow-300 justify-center items-center p-20 mb-32">
+    <div class="bg-white p-6 rounded-lg shadow-lg flex flex-col md:flex-row max-w-6xl h-auto ">
+        <div class="relative w-full md:w-1/2 flex justify-center">
+            <img src="c1-assets/cat-big.png" alt="Woman with a pet" class="rounded-lg w-full h-auto max-w-xs md:max-w-full">
+        </div>
+        <div class="p-6 flex flex-col justify-center  md:w-1/2">
+            <p class="text-gray-400 text-xl">01 cat</p>
+            <h2 class="text-2xl font-bold text-gray-900">PETS MAKE GREAT COMPANIONS</h2>
+            <p class="text-gray-500 mt-2">The cat (Felis catus), also referred to as the domestic cat, is a small domesticated carnivorous mammal. It is the only domesticated species of the family Felidae. Advances in archaeology and genetics have shown that the domestication of the cat occurred in the Near East around 7500 BC.</p>
+            <button class=" motion-safe:animate-bounce mt-6 px-6 py-3 bg-yellow-400 text-gray-900 font-semibold rounded-lg shadow-md hover:bg-green-500">
+                Read More...
+            </button> 
         </div>
     </div>
 </section>
 
-<section class="bg-yellow-200 flex flex-col items-center p-6">
-    <div class="w-full h-72 bg-white p-6 rounded-lg shadow-lg max-w-6xl relative flex flex-col md:flex-row items-center justify-between lg:-mt-40">
-        <div class="w-32 h-32 sm:w-40 sm:h-40 md:w-44 md:h-44 bg-gray-100 rounded-lg flex items-center justify-center shadow-md absolute top-[-2rem] md:top-10">
+<!-- 6th part -->
+ <section>
+<div class="relative -mb-40 sm:px-6 lg:px-20">
+    <div class="bg-orange-50 max-w-7xl mx-10 p-6 md:p-10 lg:p-16 rounded-lg shadow-lg flex flex-col md:flex-row items-center md:items-start gap-6 md:gap-10">  
+        <!-- Image Container -->
+        <div class="w-32 h-32 sm:w-40 sm:h-40 md:w-44 md:h-44 rounded-lg flex items-center justify-center">
             <img src="c1-assets/cute-pet-small.png" alt="Cute Dog" class="w-full h-full object-cover rounded-lg">
         </div>
-        
-        <div class="text-center md:text-left flex-1 mt-24 md:mt-0 md:ml-6">
-            <h2 class="text-xl font-bold">Get Pawsome News!</h2>
-            <p class="text-gray-600">Exclusive training tips, tricks, product deals, and more.</p>
-            <div class="flex flex-col md:flex-row gap-4 items-center md:space-x-2 mt-4">
-                <input type="email" placeholder="Enter email" class="border p-2 w-full md:w-80 rounded-lg">
-                <button class="bg-yellow-400 text-black px-4 py-2 rounded-lg w-full md:w-auto">Subscribe</button>
+
+        <!-- Text and Form Section -->
+        <div class="text-start md:text-left flex-1">
+            <h2 class="text-xl sm:text-2xl font-bold">Get Pawsome News!</h2>
+            <p class="text-gray-600 text-sm sm:text-base">Exclusive training tips, tricks, product deals, and more.</p>
+
+            <!-- Form -->
+            <div class="sm:flex-row gap-4 items-start mt-4">
+                <input type="email" placeholder="Enter email" class="border p-3 w-full sm:w-80 rounded-lg focus:ring-2 focus:ring-yellow-400 outline-none">
+                <button class="flex mt-4 bg-yellow-400 text-black px-5 py-3 rounded-lg  hover:bg-green-500 transition duration-300">Subscribe</button>
             </div>
         </div>
     </div>
+</div>
 
-    <footer class="w-full mt-40 p-6 flex flex-col items-center">
-        <div class="max-w-4xl w-full flex flex-col md:flex-row justify-between items-center text-center md:text-left">
+
+<footer class=" bg-yellow-300 w-full h-auto flex flex-col items-center">
+        <div class="max-w-4xl mt-48 mb-10 w-full flex flex-col md:flex-row justify-between items-center text-center md:text-left">
             <div class="flex-1 flex items-center justify-center md:justify-start">
-                <img src="c1-assets/cute-pet-small.png" alt="Paw Icon" class="w-8 h-8 mr-2">
-                <h3 class="font-bold">Browse Pets</h3>
+                <img src="c1-assets/logo-footer.png" alt="Paw Icon" class="w-8 h-8 mr-2">
+                <h3 class="font-bold">Browse Pets</h3>      
             </div>
             <div class="flex-1 mt-4 md:mt-0">
                 <p>Find a pet</p>
                 <p>Breeds</p>
                 <p>Contact us</p>
             </div>
-            <div class="flex-1 mt-4 md:mt-0">
+            <div class="flex-1 mt-4 mb-8 md:mt-0">
                 <p class="font-bold">Follow Us</p>
-                <div class="flex space-x-4 mt-2 justify-center md:justify-end">
-                    <img src="icon1.png" alt="Icon 1" class="w-8 h-8 rounded-lg">
-                    <img src="icon2.png" alt="Icon 2" class="w-8 h-8 rounded-lg">
-                    <img src="icon3.png" alt="Icon 3" class="w-8 h-8 rounded-lg">
-                    <img src="icon4.png" alt="Icon 4" class="w-8 h-8 rounded-lg">
+                <div class="flex space-x-4 mt-2 justify-start md:justify-start">
+                    <img src="c1-assets/fb.png" alt="Icon 1" class="w-8 h-8 rounded-lg">
+                    <img src="c1-assets/google+.png" alt="Icon 2" class="w-8 h-8 rounded-lg">
+                    <img src="c1-assets/twitter.png" alt="Icon 3" class="w-8 h-8 rounded-lg">
+                    <img src="c1-assets/dribble.png" alt="Icon 4" class="w-8 h-8 rounded-lg">
                 </div>
             </div>
         </div>
     </footer>
 </section>
-
-
 </body>
 </html>
